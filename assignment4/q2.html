@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .form-container{
+            margin:auto;
+            width: 80%;
+            padding: 50px;
+            background-color: #18be2677;
+        }
+        .form-element{
+            width: 100%;
+            margin: 10px 0px;
+        }
+        input[type=text]{
+            width:50%;
+        }
+        input[type=email]{
+            width:50%;
+        }
+        input[type=submit]{
+            width:200px;
+            height: 50px;
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        select{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="error_message" style="display:none;"></div>
+        <form action="">
+            <div class="form-element">
+                 <input type="text" name="full-name" id="full-name" value="" placeholder="Full Name">
+            </div>
+            <div class="form-element">
+                <textarea name="" id="adress" cols="100" rows="10" placeholder="Adress"></textarea>
+            </div>
+            <div class="form_element">
+                <input type="Pin" id="Pin" name="Pin" value="" placeholder="Pin Code"/>  
+            </div>
+            <div class="form_element">
+                <input type="Phone" id="Phone" name="Phone" value="" placeholder="Phone Number"/>  
+            </div>
+            <div class="form-element">
+                <input type="email" id="email" name="email" value="" placeholder="Email">
+            </div>
+            <div class="form_element">
+                <select name="Gender" id="Gender">
+                    <option value="">Select Gender</option>
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                    </select>
+            </div>
+            <div class="form_element">
+                <input type="Password" id="Password" name="Password" value="" placeholder=" Password"/>  
+            </div>
+            <div class="form_element">
+                <input type="Password" id="Password1" name="CPassword" value="" placeholder="Confirm Password"/>  
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="i-agree" name="i-agree" value="1">I agree with all terms and condition
+            </div>
+            <div class="form-element">
+                <input type="submit" id="btn" name="submit" value="submit">
+
+            </div>
+        </form>
+    </div>
+    
+    <div>
+        Name:   <span id="show_name"></span><br>
+        Adress: <span id="show_adress"></span><br>
+        Phone: <span id="show_phone"></span><br>
+        Pin: <span id="show_pin"></span><br>
+        Email:  <span id="show_email"></span><br>
+        Gender:  <span id="show_gender"></span><br>
+        Password:  <span id="show_password"></span><br>
+        Confirm Password:  <span id="show_password1"></span><br>
+
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
